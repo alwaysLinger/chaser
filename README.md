@@ -12,3 +12,13 @@ Next version I will reduce the usage of closure cause it's scope problem kind of
 - additional event driver implement
 - udp, http, ws and support
 - ...
+
+**EXAMPLES**
+```php
+# test for c10K
+# server
+php bin/chaser.php start
+
+# 10K clients  just take advantage of swoole coroutine tcp client
+php tests/multiclient.php
+```
